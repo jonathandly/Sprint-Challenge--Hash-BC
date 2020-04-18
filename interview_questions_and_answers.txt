@@ -1,0 +1,29 @@
+Explain in detail the workings of a dynamic array:
+
+    1. What is the runtime complexity to access an array, add or remove from the front,
+    and add or remove from the back?
+        - O(1)
+
+    2. What is the worse case scenario if you try to extend the storage size
+    of a dynamic array?
+        - O(n)
+
+Explain how a blockchain is structured? What are the blocks, what is the chain?
+How is the data organized? 
+    - It is made up of blocks that are all chained together. Each link in the chain
+    is made up of a block which contains these components. Index, Timestamp, Transactions,
+    Proof, and Previous Hash. 
+
+Explain how proof of work functions? How does it operate? How does this protect the chain
+from attack? What kind of attack are possible?
+    - A proof of work is a problem that is difficult to solve computationaly by an average computer.
+    Since each block contains a hash of the previous block, in order to break the chain,
+    someone would have to rehash all the previous blocks, and keep mining new blocks, in order
+    for their blockchain to be accepted, it needs to be the longest chain to obtain consensus.
+    When a solution is discovered, a block is mined and is added to the chain,
+    by the node discovered it. If it is valid, the node will hash the previous block
+    and add it to the new block. It then shares the new block wil the other nodes on the 
+    network, which check to make sure it has an index one higher than the last block. If these
+    checks pass, then the new block is added to the network. I think this prevents an attack
+    such as brute force, where a person would need more computation power than is available
+    in order to break the chain.
