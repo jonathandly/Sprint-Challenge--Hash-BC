@@ -50,7 +50,7 @@ def valid_proof(last_hash, proof):
 
     hash_value = hashlib.sha256(guess).hexdigest()
 
-    return hash_value[:5] == last_hash[:5] 
+    return hash_value[:5] == last_hash[-5:] 
 
 
 if __name__ == '__main__':
