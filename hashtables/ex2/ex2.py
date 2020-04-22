@@ -34,4 +34,4 @@ def reconstruct_trip(tickets, length):
         current = route[index]
         index += 1
 
-    return route
+    return route[0:-1]
